@@ -10,15 +10,18 @@ class UserRegistration extends Controller
 {
     public function postRegister(Request $request){
         //Retrieve the name input field
-        $name = $request->input('name');
-        echo 'Name: '.$name;
+        $firstname = $request->input('firstname');
+        echo 'FName: '.$firstname;
         echo '<br>';
 
         //Retrieve the username input field
-        $username = $request->username;
-        echo 'Username: '.$username;
+        $lastname = $request->lastname;
+        echo 'Lname: '.$lastname;
         echo '<br>';
-
+        
+        $email = $request->new_email;
+        echo 'Email: '.$email;
+        echo '<br>';
         //Retrieve the password input field
         $password = $request->password;
         echo 'Password: '.$password;
