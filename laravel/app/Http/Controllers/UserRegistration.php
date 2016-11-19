@@ -23,6 +23,9 @@ class UserRegistration extends Controller
         echo 'Email: '.$email;
         echo '<br>';
         //Retrieve the password input field
+        $gender = $request->gender;
+        echo 'Gender: '.$gender;
+        echo '<br>';
         $password = $request->password;
         echo 'Password: '.$password;
     }
