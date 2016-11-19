@@ -26,6 +26,11 @@ class UserRegistration extends Controller
         $gender = $request->gender;
         echo 'Gender: '.$gender;
         echo '<br>';
+        $year = $request->year;
+        $month = $request->month;
+        $day = $request->day;
+         echo 'DOB: '.$year.'-'.$month.'-'.$day;
+        echo '<br>';
         $password = $request->password;
         echo 'Password: '.$password;
     }
