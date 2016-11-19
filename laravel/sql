@@ -1,0 +1,25 @@
+CREATE TABLE `tb_registor` (
+  `id` int(11) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `firstname` varchar(50) NOT NULL,
+  `lastname` varchar(50) NOT NULL,
+  `gender` varchar(6) NOT NULL,
+  `dob` date NOT NULL,
+  `datecreate` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+ 
+--
+-- Indexes for table `tb_registor`
+--
+ALTER TABLE `tb_registor`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `tb_registor`
+--
+ALTER TABLE `tb_registor`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
